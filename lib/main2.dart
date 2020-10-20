@@ -393,7 +393,7 @@ class FirstTabState extends State<FirstTab>{
                                                   MaterialPageRoute(builder: (context) => player()));
                                             }, child:  CircleAvatar(
                                               child: Icon(Icons.play_arrow_rounded,color: Colors.white,),
-                                              backgroundColor: Colors.grey,
+                                              backgroundColor: Colors.blue,
                                             ) )
                                           ],
                                         )
@@ -448,7 +448,7 @@ class FirstTabState extends State<FirstTab>{
                                                   MaterialPageRoute(builder: (context) => player()));
                                             }, child:  CircleAvatar(
                                               child: Icon(Icons.play_arrow_rounded,color: Colors.white,),
-                                              backgroundColor: Colors.grey,
+                                              backgroundColor: Colors.blue,
                                             ) )
                                           ],
                                         )
@@ -503,7 +503,7 @@ class FirstTabState extends State<FirstTab>{
                                                 MaterialPageRoute(builder: (context) => player()));
                                           }, child:  CircleAvatar(
                                             child: Icon(Icons.play_arrow_rounded,color: Colors.white,),
-                                            backgroundColor: Colors.grey,
+                                            backgroundColor: Colors.blue,
                                           ) )
                                         ],
                                       )
@@ -567,7 +567,7 @@ class FirstTabState extends State<FirstTab>{
                                             MaterialPageRoute(builder: (context) => player()));
                                       }, child:  CircleAvatar(
                                         child: Icon(Icons.play_arrow_rounded,color: Colors.white,),
-                                        backgroundColor: Colors.grey,
+                                        backgroundColor: Colors.blue,
                                       ) )
                                     ],
                                   )
@@ -622,7 +622,7 @@ class FirstTabState extends State<FirstTab>{
                                                 MaterialPageRoute(builder: (context) => player()));
                                           }, child:  CircleAvatar(
                                             child: Icon(Icons.play_arrow_rounded,color: Colors.white,),
-                                            backgroundColor: Colors.grey,
+                                            backgroundColor: Colors.blue,
                                           ) )
                                         ],
                                       )
@@ -677,7 +677,7 @@ class FirstTabState extends State<FirstTab>{
                                             MaterialPageRoute(builder: (context) => player()));
                                       }, child:  CircleAvatar(
                                         child: Icon(Icons.play_arrow_rounded,color: Colors.white,),
-                                        backgroundColor: Colors.grey,
+                                        backgroundColor: Colors.blue,
                                       ) )
                                     ],
                                   )
@@ -748,7 +748,7 @@ class FirstTabState extends State<FirstTab>{
                                           MaterialPageRoute(builder: (context) => player()));
                                     }, child:  CircleAvatar(
                                       child: Icon(Icons.play_arrow_rounded,color: Colors.white,),
-                                      backgroundColor: Colors.grey,
+                                      backgroundColor: Colors.blue,
                                     ) )
                                   ],
                                 )
@@ -803,7 +803,7 @@ class FirstTabState extends State<FirstTab>{
                                                   MaterialPageRoute(builder: (context) => player()));
                                             }, child:  CircleAvatar(
                                               child: Icon(Icons.play_arrow_rounded,color: Colors.white,),
-                                              backgroundColor: Colors.grey,
+                                              backgroundColor: Colors.blue,
                                             ) )
                                           ],
                                         )
@@ -858,7 +858,7 @@ class FirstTabState extends State<FirstTab>{
                                                   MaterialPageRoute(builder: (context) => player()));
                                             }, child:  CircleAvatar(
                                               child: Icon(Icons.play_arrow_rounded,color: Colors.white,),
-                                              backgroundColor: Colors.grey,
+                                              backgroundColor: Colors.blue,
                                             ) )
                                           ],
                                         )
@@ -928,7 +928,7 @@ class FirstTabState extends State<FirstTab>{
                                               MaterialPageRoute(builder: (context) => player()));
                                         }, child:  CircleAvatar(
                                           child: Icon(Icons.play_arrow_rounded,color: Colors.white,),
-                                          backgroundColor: Colors.grey,
+                                          backgroundColor: Colors.blue,
                                         ) )
                                       ],
                                     )
@@ -983,7 +983,7 @@ class FirstTabState extends State<FirstTab>{
                                                   MaterialPageRoute(builder: (context) => player()));
                                             }, child:  CircleAvatar(
                                               child: Icon(Icons.play_arrow_rounded,color: Colors.white,),
-                                              backgroundColor: Colors.grey,
+                                              backgroundColor: Colors.blue,
                                             ) )
                                           ],
                                         )
@@ -1038,7 +1038,7 @@ class FirstTabState extends State<FirstTab>{
                                             MaterialPageRoute(builder: (context) => player()));
                                       }, child:  CircleAvatar(
                                         child: Icon(Icons.play_arrow_rounded,color: Colors.white,),
-                                        backgroundColor: Colors.grey,
+                                        backgroundColor: Colors.blue,
                                       ) )
                                     ],
                                   )
