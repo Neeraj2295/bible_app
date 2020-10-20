@@ -42,7 +42,7 @@ dev_dependencies:
 flutter_icons:
   android: true
   ios: true
-  image_path: "assets/netflix.png"
+  image_path: "assets/our-redx-transparent.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -59,6 +59,7 @@ flutter:
   assets:
      - assets/
      - assets/wallpaper2you_64435.png
+     - assets/our-redx-transparent.png
      - assets/bible.png
      - assets/800px_COLOURBOX2793701.png
      - assets/cross (1).png

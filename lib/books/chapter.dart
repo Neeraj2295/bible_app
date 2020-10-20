@@ -30,80 +30,80 @@ class _chapterState extends State<chapter> {
                     context,
                     MaterialPageRoute(builder: (context) => Pdf()));
               },child: ListTile(
-                title: Container(color: Colors.white,height: 60,padding: EdgeInsets.all(8),alignment: Alignment.center,
-                    child: Text("CHAPTER 1",style: TextStyle(color: Colors.black),)),
+                title: Container(color: Colors.blueGrey[700],height: 60,padding: EdgeInsets.all(8),alignment: Alignment.center,
+                    child: Text("JOHN CHAPTER 1",style: TextStyle(color: Colors.white),)),
               ) ,),
               FlatButton(onPressed: (){
                 Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => Pdf()));
               },child: ListTile(
-                title: Container(color: Colors.white,height: 60,padding: EdgeInsets.all(8),alignment: Alignment.center,
-                    child: Text("CHAPTER 2",style: TextStyle(color: Colors.black),)),
+                title: Container(color: Colors.blueGrey[700],height: 60,padding: EdgeInsets.all(8),alignment: Alignment.center,
+                    child: Text("JOHN CHAPTER 2",style: TextStyle(color: Colors.white),)),
               ) ,),
               FlatButton(onPressed: (){
                 Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => Pdf()));
               },child: ListTile(
-                title: Container(color: Colors.white,height: 60,padding: EdgeInsets.all(8),alignment: Alignment.center,
-                    child: Text("CHAPTER 3",style: TextStyle(color: Colors.black),)),
+                title: Container(color: Colors.blueGrey[700],height: 60,padding: EdgeInsets.all(8),alignment: Alignment.center,
+                    child: Text("JOHN CHAPTER 3",style: TextStyle(color: Colors.white),)),
               ) ,),
               FlatButton(onPressed: (){
                 Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => Pdf()));
               },child: ListTile(
-                title: Container(color: Colors.white,height: 60,padding: EdgeInsets.all(8),alignment: Alignment.center,
-                    child: Text("CHAPTER 4",style: TextStyle(color: Colors.black),)),
+                title: Container(color: Colors.blueGrey[700],height: 60,padding: EdgeInsets.all(8),alignment: Alignment.center,
+                    child: Text("JOHN CHAPTER 4",style: TextStyle(color: Colors.white),)),
               ) ,),
               FlatButton(onPressed: (){
                 Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => Pdf()));
               },child: ListTile(
-                title: Container(color: Colors.white,height: 60,padding: EdgeInsets.all(8),alignment: Alignment.center,
-                    child: Text("CHAPTER 5",style: TextStyle(color: Colors.black),)),
+                title: Container(color: Colors.blueGrey[700],height: 60,padding: EdgeInsets.all(8),alignment: Alignment.center,
+                    child: Text("JOHN CHAPTER 5",style: TextStyle(color: Colors.white),)),
               ) ,),
               FlatButton(onPressed: (){
                 Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => Pdf()));
               },child: ListTile(
-                title: Container(color: Colors.white,height: 60,padding: EdgeInsets.all(8),alignment: Alignment.center,
-                    child: Text("CHAPTER 6",style: TextStyle(color: Colors.black),)),
+                title: Container(color: Colors.blueGrey[700],height: 60,padding: EdgeInsets.all(8),alignment: Alignment.center,
+                    child: Text("JOHN CHAPTER 6",style: TextStyle(color: Colors.white),)),
               ) ,),
               FlatButton(onPressed: (){
                 Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => Pdf()));
               },child: ListTile(
-                title: Container(color: Colors.white,height: 60,padding: EdgeInsets.all(8),alignment: Alignment.center,
-                    child: Text("CHAPTER 7",style: TextStyle(color: Colors.black),)),
+                title: Container(color: Colors.blueGrey[700],height: 60,padding: EdgeInsets.all(8),alignment: Alignment.center,
+                    child: Text("JOHN CHAPTER 7",style: TextStyle(color: Colors.white),)),
               ) ,),
               FlatButton(onPressed: (){
                 Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => Pdf()));
               },child: ListTile(
-                title: Container(color: Colors.white,height: 60,padding: EdgeInsets.all(8),alignment: Alignment.center,
-                    child: Text("CHAPTER 8",style: TextStyle(color: Colors.black),)),
+                title: Container(color: Colors.blueGrey[700],height: 60,padding: EdgeInsets.all(8),alignment: Alignment.center,
+                    child: Text("JOHN CHAPTER 8",style: TextStyle(color: Colors.white),)),
               ) ,),
               FlatButton(onPressed: (){
                 Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => Pdf()));
               },child: ListTile(
-                title: Container(color: Colors.white,height: 60,padding: EdgeInsets.all(8),alignment: Alignment.center,
-                    child: Text("CHAPTER 9",style: TextStyle(color: Colors.black),)),
+                title: Container(color: Colors.blueGrey[700],height: 60,padding: EdgeInsets.all(8),alignment: Alignment.center,
+                    child: Text("JOHN CHAPTER 9",style: TextStyle(color: Colors.white),)),
               ) ,),
               FlatButton(onPressed: (){
                 Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => Pdf()));
               },child: ListTile(
-                title: Container(color: Colors.white,height: 60,padding: EdgeInsets.all(8),alignment: Alignment.center,
-                    child: Text("CHAPTER 10",style: TextStyle(color: Colors.black),)),
+                title: Container(color: Colors.blueGrey[700],height: 60,padding: EdgeInsets.all(8),alignment: Alignment.center,
+                    child: Text("JOHN CHAPTER 10",style: TextStyle(color: Colors.white),)),
               ) ,)
             ]
           ),

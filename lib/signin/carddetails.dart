@@ -26,7 +26,7 @@ class _cardState extends State<card> {
           title: Row(
             children: [
               Container(
-                child: Text("  ORI",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.red,),),
+                child: Text("  OUR",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.red,),),
               ),
               SizedBox(width: 0,),
               FlatButton(child: Container(padding: EdgeInsets.fromLTRB(70, 0, 0, 0),

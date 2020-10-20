@@ -41,7 +41,7 @@ class _signinState extends State<signin> {
         title: Row(
           children: [
             Container(
-              child: Text("ORI",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.red,fontSize: 28),),
+              child: Text("OUR",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.red,fontSize: 28),),
             ),
             SizedBox(width: 70,),
             FlatButton(onPressed: (){

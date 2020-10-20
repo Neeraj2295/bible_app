@@ -63,7 +63,7 @@ class _MyHomePageState extends State<MyHomePage>
                 child: AnimatedSplashScreen(
                     duration: 5,
                     splash: Image(
-                      image: AssetImage("assets/netflix.png"),
+                      image: AssetImage("assets/our-redx-transparent.png"),
                     ),
                     nextScreen: firstscreen(),
                     splashIconSize: 100,

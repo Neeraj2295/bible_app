@@ -17,7 +17,7 @@ class _firstscreenState extends State<firstscreen> {
         title: Row(
           children: [
             SizedBox(width: 15,),
-            Text(" ORI",style: TextStyle(color: Colors.red,fontSize: 20),),
+            Text(" Our",style: TextStyle(color: Colors.red,fontSize: 20),),
             SizedBox(width: 100,),
             FlatButton(onPressed: (){Navigator.push(
                                 context,
@@ -39,7 +39,7 @@ class _firstscreenState extends State<firstscreen> {
           Row(
             children: [
               Container(padding: EdgeInsets.fromLTRB(120,80,0,0),height: 200,
-                child: Image(image: AssetImage("assets/netflix.png"),fit: BoxFit.fill,)
+                child: Image(image: AssetImage("assets/our-redx-transparent.png"),fit: BoxFit.fill,)
               ),
             ],
           ),
