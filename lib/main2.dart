@@ -6,9 +6,10 @@ import 'package:media_app/books/travelsam.dart';
 import 'package:media_app/download.dart';
 import 'package:media_app/more.dart';
 import 'package:media_app/quotes.dart';
+import 'package:media_app/videos/player.dart';
 import 'books/chapter.dart';
 import 'books/oldtestmant.dart';
-import 'file:///C:/Users/asus/Documents/media_app/lib/videos/player.dart';
+import 'package:media_app/videos/player.dart';
 import 'package:media_app/profile.dart';
 import 'package:media_app/search/search.dart';
 import 'package:media_app/search/search_page.dart';
@@ -96,17 +97,17 @@ class _HomeScreenPage extends State<HomeScreen>
                   ),
                   Container(
                       padding: EdgeInsets.fromLTRB(0, 40, 0, 0),
-                      child: FlatButton(child: Text("Home",style: TextStyle(color: Colors.white),),onPressed: (){Navigator.push(
+                      child: FlatButton(child: Text("Home",style: TextStyle(color: Colors.white,),),onPressed: (){Navigator.push(
                           context,
                           MaterialPageRoute(builder: (context) => HomeScreen()));},)),
                   Container(padding: EdgeInsets.fromLTRB(0, 40, 0, 0),
-                      child: FlatButton(child: Text("Travel Samaritan",style: TextStyle(color: Colors.white),),onPressed: (){
+                      child: FlatButton(child: Text("Travel Samaritan",style: TextStyle(color: Colors.white,),),onPressed: (){
                         Navigator.push(
                             context,
                             MaterialPageRoute(builder: (context) => travel()));
                       },)),
                   Container(padding: EdgeInsets.fromLTRB(0, 40, 0, 0),
-                      child: FlatButton(child: Text("Store",style: TextStyle(color: Colors.white),),
+                      child: FlatButton(child: Text("Store",style: TextStyle(color: Colors.white,),),
                         onPressed: (){
                           Navigator.push(
                               context,
@@ -168,7 +169,7 @@ class _HomeScreenPage extends State<HomeScreen>
               tabs: <Widget>[
                 Tab(
                   icon: Icon(Icons.home,size: 17,),
-                  child: Text("Home",style: TextStyle(fontSize: 12),),
+                  child: Text("Home",style: TextStyle(fontSize: 10),),
 
                 ),
                 Tab(
@@ -275,7 +276,7 @@ class FirstTabState extends State<FirstTab>{
 @override
   Widget build(BuildContext context) {
   return SingleChildScrollView(padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
-    child: Column(
+    child: Column(mainAxisAlignment: MainAxisAlignment.start,
       children: [
         Row(
           children: [
@@ -324,7 +325,7 @@ class FirstTabState extends State<FirstTab>{
                         Container(padding:EdgeInsets.fromLTRB(10,0,0,15),child: Text("Travel Samaritan",style: TextStyle(color:Colors.white70,fontSize:15,fontWeight: FontWeight.bold,),textAlign: TextAlign.left,)),
                       ],
                     ),
-                    Container(
+                    Container(alignment: Alignment.centerLeft,
                       height: MediaQuery.of(context).size.height*0.18 ,
 
 
@@ -377,8 +378,8 @@ class FirstTabState extends State<FirstTab>{
                                               Navigator.push(
                                                   context,
                                                   MaterialPageRoute(builder: (context) => chapter()));
-                                            },child: Text("CHAPTER",style: TextStyle(color: Colors.black),),
-                                          color: Colors.white,
+                                            },child: Text("CHAPTER",style: TextStyle(color: Colors.white),),
+                                          color: Colors.grey,
                                           ),
                                           width: 110,
                                         ),
@@ -387,10 +388,12 @@ class FirstTabState extends State<FirstTab>{
                                           mainAxisAlignment: MainAxisAlignment.center,
                                           children: [
                                             FlatButton(onPressed: (){
-                                              urllauncher(widget.link);
+                                              Navigator.push(
+                                                  context,
+                                                  MaterialPageRoute(builder: (context) => player()));
                                             }, child:  CircleAvatar(
-                                              child: Icon(Icons.download_sharp,color: Colors.green,),
-                                              backgroundColor: Colors.white,
+                                              child: Icon(Icons.play_arrow_rounded,color: Colors.white,),
+                                              backgroundColor: Colors.grey,
                                             ) )
                                           ],
                                         )
@@ -430,8 +433,8 @@ class FirstTabState extends State<FirstTab>{
                                               Navigator.push(
                                                   context,
                                                   MaterialPageRoute(builder: (context) => chapter()));
-                                            },child: Text("CHAPTER",style: TextStyle(color: Colors.black),),
-                                            color: Colors.white,
+                                            },child: Text("CHAPTER",style: TextStyle(color: Colors.white),),
+                                            color: Colors.grey,
                                           ),
                                           width: 110,
                                         ),
@@ -440,10 +443,12 @@ class FirstTabState extends State<FirstTab>{
                                           mainAxisAlignment: MainAxisAlignment.center,
                                           children: [
                                             FlatButton(onPressed: (){
-                                              urllauncher(widget.link);
+                                              Navigator.push(
+                                                  context,
+                                                  MaterialPageRoute(builder: (context) => player()));
                                             }, child:  CircleAvatar(
-                                              child: Icon(Icons.download_sharp,color: Colors.green,),
-                                              backgroundColor: Colors.white,
+                                              child: Icon(Icons.play_arrow_rounded,color: Colors.white,),
+                                              backgroundColor: Colors.grey,
                                             ) )
                                           ],
                                         )
@@ -483,8 +488,8 @@ class FirstTabState extends State<FirstTab>{
                                             Navigator.push(
                                                 context,
                                                 MaterialPageRoute(builder: (context) => chapter()));
-                                          },child: Text("CHAPTER",style: TextStyle(color: Colors.black),),
-                                          color: Colors.white,
+                                          },child: Text("CHAPTER",style: TextStyle(color: Colors.white),),
+                                          color: Colors.grey,
                                         ),
                                         width: 110,
                                       ),
@@ -493,11 +498,13 @@ class FirstTabState extends State<FirstTab>{
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: [
                                           FlatButton(onPressed: (){
-                                            urllauncher(widget.link);
+                                            Navigator.push(
+                                                context,
+                                                MaterialPageRoute(builder: (context) => player()));
                                           }, child:  CircleAvatar(
-                                              child: Icon(Icons.download_sharp,color: Colors.green,),
-                                              backgroundColor: Colors.white,
-                                              ) )
+                                            child: Icon(Icons.play_arrow_rounded,color: Colors.white,),
+                                            backgroundColor: Colors.grey,
+                                          ) )
                                         ],
                                       )
                                     ],
@@ -545,8 +552,8 @@ class FirstTabState extends State<FirstTab>{
                                         Navigator.push(
                                             context,
                                             MaterialPageRoute(builder: (context) => chapter()));
-                                      },child: Text("CHAPTER",style: TextStyle(color: Colors.black),),
-                                      color: Colors.white,
+                                      },child: Text("CHAPTER",style: TextStyle(color: Colors.white),),
+                                      color: Colors.grey,
                                     ),
                                     width: 110,
                                   ),
@@ -555,10 +562,12 @@ class FirstTabState extends State<FirstTab>{
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       FlatButton(onPressed: (){
-                                        urllauncher(widget.link);
+                                        Navigator.push(
+                                            context,
+                                            MaterialPageRoute(builder: (context) => player()));
                                       }, child:  CircleAvatar(
-                                        child: Icon(Icons.download_sharp,color: Colors.green,),
-                                        backgroundColor: Colors.white,
+                                        child: Icon(Icons.play_arrow_rounded,color: Colors.white,),
+                                        backgroundColor: Colors.grey,
                                       ) )
                                     ],
                                   )
@@ -598,8 +607,8 @@ class FirstTabState extends State<FirstTab>{
                                             Navigator.push(
                                                 context,
                                                 MaterialPageRoute(builder: (context) => chapter()));
-                                          },child: Text("CHAPTER",style: TextStyle(color: Colors.black),),
-                                          color: Colors.white,
+                                          },child: Text("CHAPTER",style: TextStyle(color: Colors.white),),
+                                          color: Colors.grey,
                                         ),
                                         width: 110,
                                       ),
@@ -608,10 +617,12 @@ class FirstTabState extends State<FirstTab>{
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: [
                                           FlatButton(onPressed: (){
-                                            urllauncher(widget.link);
+                                            Navigator.push(
+                                                context,
+                                                MaterialPageRoute(builder: (context) => player()));
                                           }, child:  CircleAvatar(
-                                            child: Icon(Icons.download_sharp,color: Colors.green,),
-                                            backgroundColor: Colors.white,
+                                            child: Icon(Icons.play_arrow_rounded,color: Colors.white,),
+                                            backgroundColor: Colors.grey,
                                           ) )
                                         ],
                                       )
@@ -651,8 +662,8 @@ class FirstTabState extends State<FirstTab>{
                                         Navigator.push(
                                             context,
                                             MaterialPageRoute(builder: (context) => chapter()));
-                                      },child: Text("CHAPTER",style: TextStyle(color: Colors.black),),
-                                      color: Colors.white,
+                                      },child: Text("CHAPTER",style: TextStyle(color: Colors.white),),
+                                      color: Colors.grey,
                                     ),
                                     width: 110,
                                   ),
@@ -661,10 +672,12 @@ class FirstTabState extends State<FirstTab>{
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       FlatButton(onPressed: (){
-                                        urllauncher(widget.link);
+                                        Navigator.push(
+                                            context,
+                                            MaterialPageRoute(builder: (context) => player()));
                                       }, child:  CircleAvatar(
-                                        child: Icon(Icons.download_sharp,color: Colors.green,),
-                                        backgroundColor: Colors.white,
+                                        child: Icon(Icons.play_arrow_rounded,color: Colors.white,),
+                                        backgroundColor: Colors.grey,
                                       ) )
                                     ],
                                   )
@@ -720,8 +733,8 @@ class FirstTabState extends State<FirstTab>{
                                       Navigator.push(
                                           context,
                                           MaterialPageRoute(builder: (context) => chapter()));
-                                    },child: Text("CHAPTER",style: TextStyle(color: Colors.black),),
-                                    color: Colors.white,
+                                    },child: Text("CHAPTER",style: TextStyle(color: Colors.white),),
+                                    color: Colors.grey,
                                   ),
                                   width: 110,
                                 ),
@@ -730,10 +743,12 @@ class FirstTabState extends State<FirstTab>{
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     FlatButton(onPressed: (){
-                                      urllauncher(widget.link);
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(builder: (context) => player()));
                                     }, child:  CircleAvatar(
-                                      child: Icon(Icons.download_sharp,color: Colors.green,),
-                                      backgroundColor: Colors.white,
+                                      child: Icon(Icons.play_arrow_rounded,color: Colors.white,),
+                                      backgroundColor: Colors.grey,
                                     ) )
                                   ],
                                 )
@@ -773,8 +788,8 @@ class FirstTabState extends State<FirstTab>{
                                               Navigator.push(
                                                   context,
                                                   MaterialPageRoute(builder: (context) => chapter()));
-                                            },child: Text("CHAPTER",style: TextStyle(color: Colors.black),),
-                                            color: Colors.white,
+                                            },child: Text("CHAPTER",style: TextStyle(color: Colors.white),),
+                                            color: Colors.grey,
                                           ),
                                           width: 110,
                                         ),
@@ -783,10 +798,12 @@ class FirstTabState extends State<FirstTab>{
                                           mainAxisAlignment: MainAxisAlignment.center,
                                           children: [
                                             FlatButton(onPressed: (){
-                                              urllauncher(widget.link);
+                                              Navigator.push(
+                                                  context,
+                                                  MaterialPageRoute(builder: (context) => player()));
                                             }, child:  CircleAvatar(
-                                              child: Icon(Icons.download_sharp,color: Colors.green,),
-                                              backgroundColor: Colors.white,
+                                              child: Icon(Icons.play_arrow_rounded,color: Colors.white,),
+                                              backgroundColor: Colors.grey,
                                             ) )
                                           ],
                                         )
@@ -826,8 +843,8 @@ class FirstTabState extends State<FirstTab>{
                                               Navigator.push(
                                                   context,
                                                   MaterialPageRoute(builder: (context) => chapter()));
-                                            },child: Text("CHAPTER",style: TextStyle(color: Colors.black),),
-                                            color: Colors.white,
+                                            },child: Text("CHAPTER",style: TextStyle(color: Colors.white),),
+                                            color: Colors.grey,
                                           ),
                                           width: 110,
                                         ),
@@ -836,10 +853,12 @@ class FirstTabState extends State<FirstTab>{
                                           mainAxisAlignment: MainAxisAlignment.center,
                                           children: [
                                             FlatButton(onPressed: (){
-                                              urllauncher(widget.link);
+                                              Navigator.push(
+                                                  context,
+                                                  MaterialPageRoute(builder: (context) => player()));
                                             }, child:  CircleAvatar(
-                                              child: Icon(Icons.download_sharp,color: Colors.green,),
-                                              backgroundColor: Colors.white,
+                                              child: Icon(Icons.play_arrow_rounded,color: Colors.white,),
+                                              backgroundColor: Colors.grey,
                                             ) )
                                           ],
                                         )
@@ -894,8 +913,8 @@ class FirstTabState extends State<FirstTab>{
                                           Navigator.push(
                                               context,
                                               MaterialPageRoute(builder: (context) => chapter()));
-                                        },child: Text("CHAPTER",style: TextStyle(color: Colors.black),),
-                                        color: Colors.white,
+                                        },child: Text("CHAPTER",style: TextStyle(color: Colors.white),),
+                                        color: Colors.grey,
                                       ),
                                       width: 110,
                                     ),
@@ -904,10 +923,12 @@ class FirstTabState extends State<FirstTab>{
                                       mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
                                         FlatButton(onPressed: (){
-                                          urllauncher(widget.link);
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(builder: (context) => player()));
                                         }, child:  CircleAvatar(
-                                          child: Icon(Icons.download_sharp,color: Colors.green,),
-                                          backgroundColor: Colors.white,
+                                          child: Icon(Icons.play_arrow_rounded,color: Colors.white,),
+                                          backgroundColor: Colors.grey,
                                         ) )
                                       ],
                                     )
@@ -947,8 +968,8 @@ class FirstTabState extends State<FirstTab>{
                                               Navigator.push(
                                                   context,
                                                   MaterialPageRoute(builder: (context) => chapter()));
-                                            },child: Text("CHAPTER",style: TextStyle(color: Colors.black),),
-                                            color: Colors.white,
+                                            },child: Text("CHAPTER",style: TextStyle(color: Colors.white),),
+                                            color: Colors.grey,
                                           ),
                                           width: 110,
                                         ),
@@ -957,10 +978,12 @@ class FirstTabState extends State<FirstTab>{
                                           mainAxisAlignment: MainAxisAlignment.center,
                                           children: [
                                             FlatButton(onPressed: (){
-                                              urllauncher(widget.link);
+                                              Navigator.push(
+                                                  context,
+                                                  MaterialPageRoute(builder: (context) => player()));
                                             }, child:  CircleAvatar(
-                                              child: Icon(Icons.download_sharp,color: Colors.green,),
-                                              backgroundColor: Colors.white,
+                                              child: Icon(Icons.play_arrow_rounded,color: Colors.white,),
+                                              backgroundColor: Colors.grey,
                                             ) )
                                           ],
                                         )
@@ -1000,8 +1023,8 @@ class FirstTabState extends State<FirstTab>{
                                         Navigator.push(
                                             context,
                                             MaterialPageRoute(builder: (context) => chapter()));
-                                      },child: Text("CHAPTER",style: TextStyle(color: Colors.black),),
-                                      color: Colors.white,
+                                      },child: Text("CHAPTER",style: TextStyle(color: Colors.white),),
+                                      color: Colors.grey,
                                     ),
                                     width: 110,
                                   ),
@@ -1010,10 +1033,12 @@ class FirstTabState extends State<FirstTab>{
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       FlatButton(onPressed: (){
-                                        urllauncher(widget.link);
+                                        Navigator.push(
+                                            context,
+                                            MaterialPageRoute(builder: (context) => player()));
                                       }, child:  CircleAvatar(
-                                        child: Icon(Icons.download_sharp,color: Colors.green,),
-                                        backgroundColor: Colors.white,
+                                        child: Icon(Icons.play_arrow_rounded,color: Colors.white,),
+                                        backgroundColor: Colors.grey,
                                       ) )
                                     ],
                                   )
