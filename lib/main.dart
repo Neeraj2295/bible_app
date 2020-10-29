@@ -1,80 +1,82 @@
+
 import "package:flutter/material.dart";
-import 'package:media_app/Homescreen.dart';
-import 'package:page_transition/page_transition.dart';
-import 'package:animated_splash_screen/animated_splash_screen.dart';
+import 'package:media_app/signin/Homescreen.dart';
+
+
 import "dart:async";
 
-import 'package:media_app/main2.dart';
+import 'package:media_app/signin/signup.dart';
+import 'package:media_app/signin/subscription.dart';
+
 
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
 
-  runApp(TheMitian());
+  runApp(Our());
 }
-class TheMitian extends StatelessWidget {
+
+class Our extends StatefulWidget {
+  @override
+  _OurState createState() => _OurState();
+}
+
+class _OurState extends State<Our> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'ori',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+
+      title: "Our",
+      //home:Homescreen(),
+      home: SplashScreen(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
+class SplashScreen extends StatefulWidget {
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _SplashScreenState createState() => _SplashScreenState();
 }
 
-class _MyHomePageState extends State<MyHomePage>
-    with SingleTickerProviderStateMixin {
-  AnimationController _controller;
-
+class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-
-    _controller = AnimationController(
-      duration: const Duration(seconds: 2),
-      vsync: this,
-    )..repeat();
     super.initState();
-  }
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
+
+    Timer(
+      Duration(seconds:7),
+          () {
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) =>firstscreen(),
+            ));
+      },
+    );
   }
 
   @override
   Widget build(BuildContext context) {
-    return AnimatedBuilder(
-        animation: _controller,
-        builder: (context, child) {
-          return Scaffold(
-            body: Container(
-              color: Colors.black,
-                child: AnimatedSplashScreen(
-                    duration: 5,
-                    splash: Image(
-                      image: AssetImage("assets/our-redx-transparent.png"),
-                    ),
-                    nextScreen: firstscreen(),
-                    splashIconSize: 100,
-                  backgroundColor: Colors.transparent,
-                  pageTransitionType:PageTransitionType.fade,
-                  splashTransition: SplashTransition.rotationTransition,
-                )
-
-
+    return Scaffold(
+        backgroundColor: Colors.black,
+        body:
+        Stack(children: <Widget>[
+          Center(
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.transparent,
+                image: DecorationImage(
+                  fit: BoxFit.none,
+                  image: AssetImage(
+                    'assets/ezgif.com-gif-maker (1).gif',
+                  ),
+                ),
+              ),
+              height: 500,
             ),
-          );
-        });
+          ),
+        ]),
+    );
   }
 }

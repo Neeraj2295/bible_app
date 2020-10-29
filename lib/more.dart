@@ -102,7 +102,7 @@ class _moreState extends State<more> {
           )),
           SizedBox(height: 20,),
           FlatButton(onPressed: (){
-            Navigator.push(
+            Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(builder: (context) => signin()));
           }, child: Row(

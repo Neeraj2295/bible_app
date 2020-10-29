@@ -7,7 +7,7 @@ class searchPage extends StatefulWidget {
 }
 
 class _searchPageState extends State<searchPage> {
-  static const _profileCardHeight = 150.0;
+  static const _profileCardHeight = 100.0;
 
   @override
   Widget build(BuildContext context) {
@@ -20,8 +20,7 @@ class _searchPageState extends State<searchPage> {
                   profileColor: Colors.white60
               ),
             ),
-            SizedBox(height: 20,),
-            Container(height: 50,
+            Container(height: 70,
               width: MediaQuery.of(context).size.width,
               padding: EdgeInsets.all(8),
               child: Container(padding: EdgeInsets.all(2),

@@ -6,14 +6,14 @@ class ProfileCard extends StatelessWidget {
     @required this.profileColor,
   });
   final Color profileColor;
-  static const double avatarRadius = 40;
-  static const double titleBottomMargin = (avatarRadius * 2) + 18;
+  static const double avatarRadius = 30;
+  static const double titleBottomMargin = (avatarRadius * 2) + 13;
 
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: <Widget>[
-        Container(
+        Container(height: 100,
           child: CustomPaint(
             size: Size.infinite,
             painter: ProfileCardPainter(

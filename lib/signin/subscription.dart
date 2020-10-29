@@ -15,15 +15,15 @@ class _subsState extends State<subs> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(backgroundColor: Colors.black,
-      title: Row(
+      title: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
             child: Text("  OUR",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.red,),),
           ),
           SizedBox(width: 0,),
-          FlatButton(child: Container(padding: EdgeInsets.fromLTRB(70, 0, 0, 0),
+          FlatButton(child: Container(padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
             child: Text("Sign In",style: TextStyle(color: Colors.white,fontSize: 14),),),
-            onPressed:(){Navigator.push(
+            onPressed:(){Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(builder: (context) => signin()));},
           ),
@@ -31,7 +31,7 @@ class _subsState extends State<subs> {
             Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => help()));
-          }, child:  Container(padding: EdgeInsets.fromLTRB(70, 0, 0, 0),
+          }, child:  Container(padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
             child: Text("HELP",style: TextStyle(color: Colors.white,fontSize: 14),),))
         ],
       ),

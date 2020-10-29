@@ -38,17 +38,16 @@ class _signinState extends State<signin> {
   Widget build(BuildContext context) {
     return Scaffold(backgroundColor: Colors.black12,
       appBar: AppBar(backgroundColor: Colors.black,
-        title: Row(
+        title: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Container(
               child: Text("OUR",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.red,fontSize: 28),),
             ),
-            SizedBox(width: 70,),
             FlatButton(onPressed: (){
-              Navigator.push(
+              Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(builder: (context) => help()));
-            }, child:  Container(padding: EdgeInsets.fromLTRB(70, 0, 0, 0),
+            }, child:  Container(padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
               child: Text("HELP",style: TextStyle(color: Colors.white,fontSize: 14),),))
           ],
         ),
@@ -149,7 +148,7 @@ class _signinState extends State<signin> {
               children: [
                 GestureDetector(
                   onTap: () {
-                    Navigator.push(
+                    Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(builder: (context) => help()));
                   },
@@ -167,7 +166,7 @@ class _signinState extends State<signin> {
             Row(mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 FlatButton(onPressed: (){
-                  Navigator.push(
+                  Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(builder: (context) => signup()));
                 }, child: Text("New member?  Sign up now",style: TextStyle(color: Colors.white),) ),

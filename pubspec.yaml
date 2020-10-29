@@ -29,20 +29,23 @@ dependencies:
   better_player: ^0.0.25
   flutter_share: ^1.0.2+1
   http:
+  inview_notifier_list: ^1.0.0
   flutter_pdfview:
+  video_player: ^0.10.12+3
   path_provider: any
   permission_handler: 4.4.0
   animated_splash_screen: ^1.0.1+2
   async: ^2.2.0
 
 dev_dependencies:
-  flutter_launcher_icons: ^0.8.1
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: "^0.8.1"
+
 flutter_icons:
+  image_path: "assets/our-redx-transparent.png"
   android: true
   ios: true
-  image_path: "assets/our-redx-transparent.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
