@@ -1,11 +1,9 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:media_app/search/extension.dart';
 
 class ProfileCardPainter extends CustomPainter {
   ProfileCardPainter({@required this.color, @required this.avatarRadius});
-
   static const double _margin = 6;
   final Color color;
   final double avatarRadius;

@@ -348,7 +348,7 @@ class FirstTabState extends State<FirstTab>{
                                             child:FlatButton(onPressed: (){
                                               Navigator.push(
                                                   context,
-                                                  MaterialPageRoute(builder: (context) => travel()));
+                                                  MaterialPageRoute(builder: (context) => desc()));
                                             },color: Colors.transparent,
                                               child:CircleAvatar(backgroundImage: AssetImage(x[index]),radius: 48,backgroundColor: Colors.grey,),));
                               }
@@ -376,7 +376,7 @@ class FirstTabState extends State<FirstTab>{
                                             child:GestureDetector(onTap: (){
                                               Navigator.push(
                                                   context,
-                                                  MaterialPageRoute(builder: (context) => DetailPage()));
+                                                  MaterialPageRoute(builder: (context) => desc()));
                                             },
                                               child: Container(
                                                 child:
@@ -405,7 +405,7 @@ class FirstTabState extends State<FirstTab>{
                                             child:GestureDetector(onTap: (){
                                               Navigator.push(
                                                   context,
-                                                  MaterialPageRoute(builder: (context) => DetailPage()));
+                                                  MaterialPageRoute(builder: (context) => desc()));
                                             },
                                               child: Container(
                                                 child:
@@ -434,7 +434,7 @@ class FirstTabState extends State<FirstTab>{
                                           child:GestureDetector(onTap: (){
                                             Navigator.push(
                                                 context,
-                                                MaterialPageRoute(builder: (context) => DetailPage()));
+                                                MaterialPageRoute(builder: (context) => desc()));
                                           },
                                             child: Container(
                                               child:
@@ -473,7 +473,7 @@ class FirstTabState extends State<FirstTab>{
                                       child:GestureDetector(onTap: (){
                                         Navigator.push(
                                             context,
-                                            MaterialPageRoute(builder: (context) => DetailPage()));
+                                            MaterialPageRoute(builder: (context) => desc()));
                                       },
                                         child: Container(
                                           child:
@@ -502,7 +502,7 @@ class FirstTabState extends State<FirstTab>{
                                           child:GestureDetector(onTap: (){
                                             Navigator.push(
                                                 context,
-                                                MaterialPageRoute(builder: (context) => DetailPage()));
+                                                MaterialPageRoute(builder: (context) => desc()));
                                           },
                                             child: Container(
                                               child:
@@ -531,7 +531,7 @@ class FirstTabState extends State<FirstTab>{
                                       child:GestureDetector(onTap: (){
                                         Navigator.push(
                                             context,
-                                            MaterialPageRoute(builder: (context) => DetailPage()));
+                                            MaterialPageRoute(builder: (context) => desc()));
                                       },
                                         child: Container(
                                           child:
@@ -576,7 +576,7 @@ class FirstTabState extends State<FirstTab>{
                                     child:GestureDetector(onTap: (){
                                       Navigator.push(
                                           context,
-                                          MaterialPageRoute(builder: (context) => DetailPage()));
+                                          MaterialPageRoute(builder: (context) => desc()));
                                     },
                                       child: Container(
                                         child:
@@ -605,7 +605,7 @@ class FirstTabState extends State<FirstTab>{
                                             child:GestureDetector(onTap: (){
                                               Navigator.push(
                                                   context,
-                                                  MaterialPageRoute(builder: (context) => DetailPage()));
+                                                  MaterialPageRoute(builder: (context) => desc()));
                                             },
                                               child: Container(
                                                 child:
@@ -634,7 +634,7 @@ class FirstTabState extends State<FirstTab>{
                                             child:GestureDetector(onTap: (){
                                               Navigator.push(
                                                   context,
-                                                  MaterialPageRoute(builder: (context) => DetailPage()));
+                                                  MaterialPageRoute(builder: (context) => desc()));
                                             },
                                               child: Container(
                                                 child:
@@ -677,7 +677,7 @@ class FirstTabState extends State<FirstTab>{
                                       child:GestureDetector(onTap: (){
                                         Navigator.push(
                                             context,
-                                            MaterialPageRoute(builder: (context) => DetailPage()));
+                                            MaterialPageRoute(builder: (context) => desc()));
                                       },
                                         child: Container(
                                           child:
@@ -702,7 +702,7 @@ class FirstTabState extends State<FirstTab>{
                                       child:GestureDetector(onTap: (){
                                         Navigator.push(
                                             context,
-                                            MaterialPageRoute(builder: (context) => DetailPage()));
+                                            MaterialPageRoute(builder: (context) => desc()));
                                       },
                                         child: Container(
                                           child:
@@ -727,7 +727,7 @@ class FirstTabState extends State<FirstTab>{
                                       child:GestureDetector(onTap: (){
                                         Navigator.push(
                                             context,
-                                            MaterialPageRoute(builder: (context) => DetailPage()));
+                                            MaterialPageRoute(builder: (context) => desc()));
                                       },
                                         child: Container(
                                           child:
@@ -770,7 +770,7 @@ class FirstTabState extends State<FirstTab>{
                                           child:GestureDetector(onTap: (){
                                             Navigator.push(
                                                 context,
-                                                MaterialPageRoute(builder: (context) => DetailPage()));
+                                                MaterialPageRoute(builder: (context) => desc()));
                                           },
                                             child: Container(
                                               child:
@@ -799,7 +799,7 @@ class FirstTabState extends State<FirstTab>{
                                           child:GestureDetector(onTap: (){
                                             Navigator.push(
                                                 context,
-                                                MaterialPageRoute(builder: (context) => DetailPage()));
+                                                MaterialPageRoute(builder: (context) => desc()));
                                           },
                                             child: Container(
                                               child:
@@ -829,7 +829,7 @@ class FirstTabState extends State<FirstTab>{
                                           child:GestureDetector(onTap: (){
                                             Navigator.push(
                                                 context,
-                                                MaterialPageRoute(builder: (context) => DetailPage()));
+                                                MaterialPageRoute(builder: (context) => desc()));
                                           },
                                             child: Container(
                                               child:
